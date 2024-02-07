@@ -1,10 +1,9 @@
-#include <math.h>
 #include <stdio.h>
+#include <math.h>
 #include <conio.h>
 int main(){
     int n, i, j;
     float x[10], fx[10], x1, sum = 0.0;
-    char ch;
     printf("Enter the no. of terms n : ");
     scanf("%d", &n);
     printf("Enter the respective values of x0 to xn and f0 to fn : \n");
@@ -25,6 +24,6 @@ int main(){
         }
         sum = sum + (fx[i] * p);
     }
-    printf("f(%.2f) : %.2f\n", x1, sum);
+    printf("f(%.2f) = %.2f\n", x1, sum);
     return 0;
 }
